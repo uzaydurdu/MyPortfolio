@@ -1,0 +1,200 @@
+.myPortfolio-resume {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    border-radius: 5px;
+    padding: 0rem 15rem;
+    margin: 10rem 0;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+
+
+.myPortfolio-resume-container__resume{
+    display: flex;
+    
+    position: relative;
+    margin: 0;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.myPortfolio-resume-container__resume img{
+    transform: scale(0.7);
+    width: 595px;
+    height: auto;
+}
+
+.myPortfolio-resume-container__resume button{
+    position: absolute;
+    top: 32.5%;
+    left: 45.68%;
+    transform: translate(-44%, -80%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: var(--color-neongreen);
+    color: #282828;
+    font-weight: 800;
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 25px;;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 30px 177px 30px 177px;
+    border-radius: 0px;
+    clip-path: polygon(0% 0%, 100% 0, 100% 0%, 100% 100%, 0 100%, 0% 50%);
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.myPortfolio-resume-container__resume button:hover {
+    font-size: 20px;
+    clip-path: polygon(0% 0%, 100% 0, 100% 0%, 75% 100%, 0 100%, 0% 50%);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+  }
+
+.myPortfolio-resume-content{
+    flex: 1;
+    display: flex;
+    margin-top: -30rem;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.myPortfolio-resume-content h1{
+    font-size: 48px;
+    line-height: 65px;
+    font-weight: 500;
+    max-width: 510px;
+    font-family: var(--font-family);
+    color: var(--color-neongreen);
+}
+
+
+
+.myPortfolio-resume-content span{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    color: #D0EC58;
+    line-height: 50px;
+    letter-spacing: -0.02em;
+   
+}
+
+
+.myPortfolio-resume-content p{
+    font-family: var(--font-family);
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 35px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 40px;
+    margin: 1.5rem 0  1.5rem  0;
+}
+
+.myPortfolio-resume-content p:nth-of-type(2){
+    font-family: var(--font-family);
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    color: rgba(255, 255, 255, 0.623);
+    margin: 1.5rem 0  0  0;
+}
+
+.myPortfolio-resume-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+
+
+
+@media screen and (max-width: 850px) {
+
+    .myPortfolio-resume {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border-radius: 5px;
+        padding: 40rem 5rem;
+        margin: 10rem 0;
+        justify-content: center;
+        overflow: hidden;
+        align-items: center;
+    }
+    .myPortfolio-resume-content {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .myPortfolio-resume-content p {
+        margin-top: 1rem;
+        font-size: 18px;
+    }
+
+    .myPortfolio-resume-content h1 {
+        margin-top: 1rem;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    
+    .myPortfolio-resume-content h1{
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .myPortfolio-resume-content p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .myPortfolio-resume-content span{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .myPortfolio-resume-container__resume img{
+        display: none;
+    }
+
+    .myPortfolio-resume-container__resume button{
+        justify-content: center;
+        top: 0;
+        left: 0; 
+        transform: translate(-50%, 50%);
+        -ms-transform: translate(-50%, -50%);
+        padding: 30px 240px 30px 240px;
+        border-radius: 0px;
+        clip-path: polygon(0% 0%, 100% 0, 100% 0%, 100% 100%, 0 100%, 0% 50%);
+        transition: all 0.2s ease-in-out;
+            
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .myPortfolio-resume-container .yos__features-container__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+
+    .myPortfolio-resume-container__resume img{
+        display: none;
+    }
+}

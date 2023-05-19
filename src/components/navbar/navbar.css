@@ -1,0 +1,208 @@
+.myPortfolio__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.myPortfolio__navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myPortfolio__navbar-links-logo{
+    margin-right: 2rem;
+    
+}
+
+.myPortfolio__navbar-links-logo img{
+    width: 50px;
+    height: 75px;
+}
+
+.myPortfolio__navbar-links-logo p{
+    color: #282828;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 25px;
+    text-align: center;
+    
+    margin-left: 2rem;
+    letter-spacing: -2px;
+    text-transform: capitalize;
+    
+}
+
+/*.myPortfolio__navbar-links-logo p:last-child{
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: lighter;
+    font-size: 24px;
+    line-height: 25px;
+    display: inline-flex;
+    text-transform: capitalize;
+    margin-left: 5px;
+}*/
+
+.myPortfolio__navbar-logo-slanted__rectangle {
+    position: relative;
+    width: auto;
+    padding-right: 4rem;
+    height: 55px;
+    clip-path: polygon(0% 0%, 100% 0, 100% 0%, 75% 100%, 0 100%, 0% 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--color-neongreen);
+    color: white;
+    overflow: hidden;
+}
+
+.myPortfolio__navbar-logo-slanted__rectangle-button {
+    position: relative;
+    width: auto;
+    height: 55px;
+    clip-path: polygon(0 100%,25% 0, 100% 0, 100% 100%, 0 100%);
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--color-neongreen);
+    color: white;
+    overflow: hidden;
+}
+
+.myPortfolio__navbar-links_container{
+    display: flex;
+    flex-direction: row;
+}
+
+.myPortfolio__navbar-sign{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.myPortfolio__navbar-sign p,
+.myPortfolio__navbar-menu_container p {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.myPortfolio__navbar-links_container p{
+    color: var(--color-neongreen);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.myPortfolio__navbar-links_container p:hover {
+    transform: scale(1.1);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+  }
+
+.myPortfolio__navbar-sign button,
+.myPortfolio__navbar-menu_container button{
+    padding: 0.7rem 1.5rem;
+    color: var(--color-text);
+    background: var(--color-neongreen);
+    font-family: var(--font-family);
+    letter-spacing: -1px;
+    margin-left: 2rem;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.myPortfolio__navbar-sign button:hover,
+.myPortfolio__navbar-menu_container button:hover {
+    transform: scale(1.1);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+  }
+
+.myPortfolio__navbar-menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.myPortfolio__navbar-menu svg{
+    cursor: pointer;
+}
+
+.myPortfolio__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0,0,0,0.2);
+}
+
+.myPortfolio__navbar-menu_container p{
+    margin: 1rem 0;
+}
+
+.myPortfolio__navbar-menu_container-links-sign {
+    display: none;
+}
+
+@media screen and (max-width: 1050px){
+    .myPortfolio__navbar-links_container{
+        display: none;
+    }
+
+    .myPortfolio__navbar-menu{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .myPortfolio__navbar-{
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .myPortfolio__navbar-{
+        padding: 2rem;
+    }
+    .myPortfolio__navbar-sign{
+        display: none;
+    }
+
+    .myPortfolio__navbar-menu_container{
+        top: 20px;
+    }
+
+    .myPortfolio__navbar-menu_container-links-sign{
+        display: block;  
+    }
+}
